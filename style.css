@@ -57,7 +57,7 @@
 
   small{
     display: block;
-    font-size: 13px;
+    font-size: 11px;
     color: var(--desc-color);
   }
 
@@ -116,9 +116,13 @@
     border: 1px solid var(--second-color);
     border-radius: var(--border-radius);
     padding: 12px 30px;
-    height: var(--button-height);
+    height: auto; /* Sesuaikan tinggi dengan isi */
+    min-width: 80px; /* Lebar minimum tombol */
+    flex: 1;
+    text-align: center;
     cursor: pointer;
     text-decoration: none;
+    white-space: nowrap;
   }
   .line-spacing{
     background-color: #FFF9F9;
@@ -370,3 +374,29 @@
     background-color: transparent !important; /* Hilangkan background saat accordion terbuka */
     box-shadow: none !important; /* Hilangkan shadow saat aktif */
 }
+
+
+@media (max-width: 480px) {
+
+  .footer .main-menu p {
+    font-size: 12px; /* Ukuran teks lebih kecil */
+  }
+
+  .footer .main-menu img {
+    width: 18px; /* Ikon diperkecil */
+    height: 18px;
+  }
+  .footer .donasi-menu img {
+    width: 58px; /* Ikon diperkecil */
+    height: 58px;
+    margin-top: 10px;
+  }
+
+  .grid-category img {
+    width: 40px;
+  }
+  .grid-category p {
+    font-size: 12px;
+  }
+}
+
