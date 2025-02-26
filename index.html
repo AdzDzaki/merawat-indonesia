@@ -29,16 +29,16 @@
         <div class="col-1 px-0">
             <img src="assets/img/merawat-indonesia.png" alt="logo merawat indonesia" width="100%" height="auto">
         </div>
-        <div class="col-8 px-0">
+        <div class="col-7 col-md-8 px-0">
             <div class="search">
                 <img src="assets/img/icon/Search.svg" alt="">
                 <input type="text" placeholder="Cari Program, Bantu Bersama">
             </div>
         </div>
-        <div class="col-1">
+        <div class=" text-end">
             <a href="" class="btn-rectangle"><img src="assets/img/icon/Filter.svg" style="transform: translateY(-2px);" alt=""></a>
         </div>
-        <div class="col-1">
+        <div class=" text-end" style="padding-top: 2px;">
             <a href="" class="btn-rectangle"><img src="assets/img/icon/notification.svg" style="transform: translateY(2px);"  alt=""></a>
         </div>
     </div>
@@ -47,7 +47,7 @@
     <div class="hero">
         <img src="assets/img/main-banner.png" class="mt-0 pt-0" width="100%" alt="">
         <div class="caption">
-            <h2>Aplikasi Donasi Sekarang!</h2>
+            <h2>Unduh Aplikasi Donasi Sekarang!</h2>
             <p>Nikmati kemudahan berondasi langsung dari perangkat Anda, Download sekarang!</p>
             <div class="d-flex">
                 <a href="#" class="button w-50 mx-1 text-center"><i class="fa-brands fa-google-play"></i> Google Play</a>
@@ -81,13 +81,19 @@
             <h2>10 Donasi Terbanyak</h2>
             <a href="/leaderboard">Lihat Semua</a>
         </div>
-        <div class="slide-avatar scroll-x mt-2">
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar1.png" alt="Donasi"><p>Lisa</p></a>
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar2.png" alt="Wiliam"><p>Wiliam</p></a>
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar3.png" alt="Andrew"><p>Andrew</p></a>
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar4.png" alt="Isabella"><p>Isabella</p></a>
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar6.png" alt="James"><p>James</p></a>
-            <a href="#" class="avatar"><img src="assets/img/avatar/avatar5.png" alt="Amelia"><p>Amelia</p></a>
+        <div class="swiper donaturSwiper mt-2">
+            <div class="swiper-wrapper">
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar1.png" alt="Donasi"><p>Lisa</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar2.png" alt="Wiliam"><p>Wiliam</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar3.png" alt="Andrew"><p>Andrew</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar4.png" alt="Isabella"><p>Isabella</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar6.png" alt="James"><p>James</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar5.png" alt="Amelia"><p>Amelia</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar1.png" alt="Donasi"><p>Lisa</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar2.png" alt="Wiliam"><p>Wiliam</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar3.png" alt="Andrew"><p>Andrew</p></a>
+            <a href="#" class="avatar swiper-slide"><img src="assets/img/avatar/avatar4.png" alt="Isabella"><p>Isabella</p></a>
+        </div>
         </div>
     </div>
 
@@ -426,6 +432,30 @@
     loop: true, 
     slidesPerView: 1,
     });
+
+    var swiper = new Swiper(".donaturSwiper", {
+        spaceBetween: 6,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true, 
+    slidesPerView: 1.8,
+      breakpoints: {
+        1024: {
+          slidesPerView: 7,
+        },
+      }
+    });
+
   </script>
   
 </body>
