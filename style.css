@@ -64,13 +64,22 @@
     font-weight: var(--font-weight-regular);
     color: var(--desc-color);
   }
-
+  label{
+    color: var(--desc-color);
+    margin-left: 20px;
+  }
+  .form-control{
+    padding-left: 20px !important;
+  }
+  .form-switch .form-check-input:checked{
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+  }
   small{
     display: block;
     font-size: 11px;
     color: var(--desc-color);
   }
-
   .circle-dropdown{
     color: white;
     background-color: var(--second-color);
@@ -142,6 +151,7 @@
     height: 20px;
   }
 
+
   .navbar {
     background-color: #ffff;
     color: #fff;
@@ -154,6 +164,29 @@
     width: 100%;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
+}
+
+  .navbar-back {
+    background-color: var(--second-color);
+    color: #fff;
+    box-shadow:var(--box-shadow-default);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.navbar-back a, .circle-arrow{
+  display: flex;
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center;    /* Memusatkan konten secara vertikal */
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
 }
 
 .swiper {
@@ -190,6 +223,10 @@
     background-color: var(--main-color);
     color: white;
     border-radius: var(--border-radius);
+  }
+
+  .bg-danger{
+    background-color: var(--second-color) !important;
   }
 
   .bg-main-opacity{
@@ -369,6 +406,9 @@
   margin: 10px 0px;
 }
 
+.card{
+  border: none;
+}
 
 .info-kampanye .btn-outline-danger:focus,
 .info-kampanye .btn-primary{
