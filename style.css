@@ -66,7 +66,7 @@
   }
   label{
     color: var(--desc-color);
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .form-control{
     padding-left: 20px !important;
@@ -410,13 +410,13 @@
   border: none;
 }
 
-.info-kampanye .btn-outline-danger:focus,
-.info-kampanye .btn-primary{
+.btn-outline-danger:focus,
+.btn-primary{
   background-color: var(--second-color) !important;
   color: white !important;
 }
 
-.info-kampanye .tab-content button{
+.tab-content button{
   background-color: #fff;
 }
 
