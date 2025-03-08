@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-danger {
+            background-color: #FF4747;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef7f7;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border: 7px solid white;
+            margin-top: -75px;
+        }
+
+        .content-box {
+            background: white;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .donation-card {
+            background: #fff;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon img {
+            width: auto;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .btn-responsive {
+            font-size: 14px;
+            padding: 8px 12px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            /* Tombol akan menyesuaikan lebar secara proporsional */
+            min-width: 0;
+            /* Memastikan tombol bisa mengecil */
+        }
+
+        .btn-responsive img {
+            width: 15px;
+            /* Ukuran ikon default */
+            height: 15px;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .btn-responsive {
+                font-size: 12px;
+                /* Ukuran font lebih kecil di layar kecil */
+                padding: 6px 10px;
+            }
+
+            .btn-responsive img {
+                width: 12px;
+                /* Ukuran ikon lebih kecil di layar kecil */
+                height: 12px;
+                margin-right: 6px;
+            }
+
+            .social-icon img {
+                height: 40px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                margin-top: -60px;
+            }
+        }
+
+        .logout-box {
+            margin-top: auto;
+            padding-bottom: 20px;
+            /* Memberikan jarak di bagian bawah */
+        }
+
+        .btn-active {
+            background-color: #fff !important;
+            /* Warna latar belakang putih */
+            color: #ff3b3b !important;
+            /* Warna teks merah */
+            border: 2px solid #ff3b3b !important;
+            /* Border merah */
+            font-weight: bold !important;
+            /* Teks tebal */
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="d-flex justify-content-center flex-grow-1">
+        <div class="col-12 col-md-6 p-3 d-flex flex-column">
+            <!-- Profile & Banner Section -->
+            <div class="content-box text-center">
+                <div class="position-relative">
+                    <img src="assets/img/avatar/banner-avatar.png" class="w-100 rounded-4 img-fluid" alt="Banner">
+                    <img src="assets/img/avatar/main-avatar.png" class="rounded-circle profile-img shadow img-fluid"
+                        alt="Profile">
+                </div>
+                <p class="mb-2 text-center mt-4 fs-5 fw-bold text-second">William Saliba</p>
+                <div class="d-flex mb-3 justify-content-center">
+                    <label class="form-check-label ms-0 text-second mt-2" for="flexSwitchCheckChecked">Tampilkan Sebagai
+                        anonim “Orang Baik”?</label>
+                    <div class="form-check form-switch mx-2 mt-2">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    </div>
+                </div>
+                <p class="text-muted mx-3 mt-1">
+                    Selamat Datang di Sinergi Bersama Merawat Indonesia. Organisasi Penggalangan Dana Anda Dapat
+                    Mengikuti Sosial Media Kami Untuk Melihat Aktivitas Kegiatan Kami.
+                </p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <div class="social-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/icon/instagram.svg" alt="Instagram" class="img-fluid">
+                    </div>
+                    <div class="social-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/icon/youtube.svg" alt="YouTube" class="img-fluid">
+                    </div>
+                    <div class="social-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/icon/facebook.svg" alt="Facebook" class="img-fluid">
+                    </div>
+                    <div class="social-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/img/icon/tiktok.svg" alt="TikTok" class="img-fluid">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-2 mt-3 flex-nowrap w-100">
+                    <button class="btn btn-danger btn-responsive">
+                        <img src="assets/img/icon/notification-1.svg" alt="Notifikasi"> Notifikasi
+                    </button>
+                    <button class="btn btn-danger btn-responsive">
+                        <img src="assets/img/icon/edit-profile.svg" alt="Edit Profil"> Edit Profil
+                    </button>
+                    <button class="btn btn-danger btn-responsive">
+                        <img src="assets/img/icon/fundraising.svg" alt="Fundraising"> Fundraising
+                    </button>
+                </div>
+            </div>
+
+            <!-- Kotak Total Transaksi & Statistik -->
+            <div class="content-box text-center justify-content-center">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="bg-light rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 85px; height: 85px;">
+                            <img src="assets/img/icon/pencairan-dana.svg" alt="Total Transaksi" class="img-fluid"
+                                style="max-width: 75px;">
+                        </div>
+                        <div class="text-start">
+                            <p class="fw-bold text-dark mb-1">Rp 10.000.000</p>
+                            <p class="text-muted kecil mb-0">Total Transaksi Donasi</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="bg-light rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 85px; height: 85px;">
+                            <img src="assets/img/icon/total-kampanye.svg" alt="Dukungan Kampanye" class="img-fluid"
+                                style="max-width: 75px;">
+                        </div>
+                        <div class="text-start">
+                            <p class="fw-bold text-dark mb-1">10</p>
+                            <p class="text-muted kecil mb-0">Dukungan Kampanye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kotak Riwayat Donasi, Tersimpan, dan Dukungan -->
+            <div class="content-box">
+                <div class="d-flex justify-content-center gap-2 flex-nowrap w-100">
+                    <button class="btn btn-danger btn-responsive" id="btnRiwayat">Riwayat Donasi</button>
+                    <button class="btn btn-danger btn-responsive" id="btnTersimpan">Tersimpan</button>
+                    <button class="btn btn-danger btn-responsive" id="btnDukungan">Dukungan</button>
+                </div>
+
+                <!-- Riwayat Donasi (Awalnya Tersembunyi) -->
+                <div id="donationHistory" class="donation-history mt-3 d-none">
+                    <div class="donation-card p-3 border rounded shadow-sm">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Ade Yudhistira</span>
+                            <span class="fw-bold text-end">Rp 500.000</span>
+                        </div>
+                        <small class="text-muted d-block">1 hari yang lalu</small>
+                    </div>
+                    <div class="donation-card p-3 border rounded shadow-sm">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Ade Yudhistira</span>
+                            <span class="fw-bold text-end">Rp 500.000</span>
+                        </div>
+                        <small class="text-muted d-block">1 hari yang lalu</small>
+                    </div>
+                    <div class="donation-card p-3 border rounded shadow-sm">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Ade Yudhistira</span>
+                            <span class="fw-bold text-end">Rp 500.000</span>
+                        </div>
+                        <small class="text-muted d-block">1 hari yang lalu</small>
+                    </div>
+                </div>
+
+                <!-- Tersimpan (Awalnya Tersembunyi) -->
+                <div id="tersimpanContent" class="donation-history mt-3 d-none">
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 1.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 1.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 1.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Dukungan (Awalnya Tersembunyi) -->
+                <div id="dukunganContent" class="donation-history mt-3 d-none">
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 7.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 8.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/detail-kampanye.html" class="col-12 row mt-2">
+                        <div class="col-6 align-self-center">
+                            <img src="assets/img/kampanye/image-kampanye.png" class="bg-cover" width="100%"
+                                height="100%" alt="Kampanye 1">
+                        </div>
+                        <div class="col-6 p-0 align-self-center">
+                            <small class="p-0">Ruang Kita Peduli <img src="assets/img/icon/verify.svg"
+                                    style="margin-top: -3px;" alt=""></small>
+                            <h3>Bantu Dijual Koran Demi Nafkah Keluarga</h3>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%
+                                </div>
+                            </div>
+                            <div class="row col-12 m-0 p-0">
+                                <div class="col-6 p-0 text-start">
+                                    <strong>Rp 6.000.000</strong>
+                                    <small>Terkumpul</small>
+                                </div>
+                                <div class="col-6 p-0 text-end">
+                                    <strong>120</strong>
+                                    <small>Hari Lagi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div <!-- Kotak Logout -->
+            <div class="logout-box content-box text-center mt-3 mb-5">
+                <button class="btn btn-danger d-flex align-items-center justify-content-center px-4 py-2 w-100">
+                    <i class="bi bi-box-arrow-right me-2"></i> Keluar
+                </button>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer mt-auto">
+                <div class="main-menu">
+                    <a href="index.html" class="text-decoration-none">
+                        <img src="assets/img/main-menu/beranda.svg" alt="Beranda" />
+                        <p>Beranda</p>
+                    </a>
+                    <a href="galang-dana.html" class="text-decoration-none">
+                        <img src="assets/img/main-menu/galang dana.svg" alt="Galang Dana" />
+                        <p>Galang Dana</p>
+                    </a>
+                    <a href="donasi.html" class="donasi-menu text-decoration-none">
+                        <img src="assets/img/main-menu/donasi.svg" alt="Donasi" />
+                        <p>Donasi</p>
+                    </a>
+                    <a href="leaderboard.html" class="text-decoration-none">
+                        <img src="assets/img/main-menu/leaderboard.svg" alt="Leaderboard" />
+                        <p>Leaderboard</p>
+                    </a>
+                    <a href="profile.html" class="text-decoration-none">
+                        <img src="assets/img/main-menu/profile.svg" alt="Profile" />
+                        <p>Profile</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Ambil elemen tombol dan konten yang terkait
+            const btnRiwayat = document.getElementById("btnRiwayat");
+            const btnTersimpan = document.getElementById("btnTersimpan");
+            const btnDukungan = document.getElementById("btnDukungan");
+
+            const donationHistory = document.getElementById("donationHistory");
+            const tersimpanContent = document.getElementById("tersimpanContent");
+            const dukunganContent = document.getElementById("dukunganContent");
+
+            const buttons = [btnRiwayat, btnTersimpan, btnDukungan];
+            const contents = [donationHistory, tersimpanContent, dukunganContent];
+
+            function toggleContent(activeBtn, activeContent) {
+                // Sembunyikan semua konten
+                contents.forEach(content => content.classList.add("d-none"));
+
+                // Nonaktifkan semua tombol (kembalikan ke merah)
+                buttons.forEach(btn => btn.classList.remove("btn-active"));
+
+                // Jika konten yang diklik sedang tersembunyi, tampilkan
+                if (activeContent.classList.contains("d-none")) {
+                    activeContent.classList.remove("d-none");
+                    activeBtn.classList.add("btn-active"); // Tambahkan efek tombol aktif
+                }
+            }
+
+            // Event listener untuk masing-masing tombol
+            btnRiwayat.addEventListener("click", () => toggleContent(btnRiwayat, donationHistory));
+            btnTersimpan.addEventListener("click", () => toggleContent(btnTersimpan, tersimpanContent));
+            btnDukungan.addEventListener("click", () => toggleContent(btnDukungan, dukunganContent));
+
+            // Simulasikan klik tombol "Riwayat" saat halaman pertama kali dimuat
+            toggleContent(btnRiwayat, donationHistory);
+        });
+    </script>
+
+</body>
+
+</html>

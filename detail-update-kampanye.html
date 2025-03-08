@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Update Kampanye</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion-button::after {
+            display: none;
+        }
+
+        .circle-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #FF4747;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .accordion-item {
+            border-radius: 12px;
+            margin-bottom: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                font-size: 12px !important;
+            }
+
+            .btn {
+                font-size: 12px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="col-12 justify-content-center d-flex">
+        <div class="col-12 bg-white col-md-6">
+            <!-- thumbnail-detail-kampanye -->
+            <div class="thumbnail-detail-kampanye">
+                <div class="justify-content-between nav-top d-flex">
+                    <a href="index.html" class="bg-white">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <a href="" class="bg-white">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                </div>
+                <img src="assets/img/kampanye/image-kampanye.png" width="100%" alt="">
+            </div>
+
+            <div class="container">
+
+                <!-- Campaign Section -->
+                <div class="row kampanye my-3">
+                    <div class="justify-content-between d-flex mb-2">
+                        <h2>Bantu Difabel Jualan Koran Demi Nafkahi Keluarga</h2>
+                    </div>
+
+                    <div class="col-12 row mx-0 align-items-end">
+                        <div class="col-9 p-0 d-flex">
+                            <h2 class="text-color">Rp 1.000.000 <span class="small">Kebutuhan</span> <span
+                                    class="fw-bold">Rp 1.600.000</span> </h2>
+                        </div>
+                        <div class="col d-flex justify-content-end p-0">
+                            <h2>120</h2>
+                            <small class="ms-1" style="margin-top:2px;">Hari Lagi</small>
+                        </div>
+                    </div>
+
+                    <div class="col-12 row mx-0">
+
+                        <div class="progress my-1 px-0">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 row px-0 pt-2 mx-0">
+                        <small>Sisa dana yang belum dicairkan <strong>Rp 1.000.000</strong></small>
+                    </div>
+
+
+                    <div class="col-12 row mx-0 my-3">
+                        <div class="col-3  text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icon/user-donatur.svg" alt="" class="me-2" style="height: 20px;">
+                                <p class="count m-0 d-flex align-items-center">829</p>
+                            </div>
+
+                            <small>Donatur</small>
+                        </div>
+                        <div class="col-3  text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icon/kabar-terbaru.svg" alt="" class="me-2" style="height: 20px;">
+                                <p class="count m-0 d-flex align-items-center">829</p>
+                            </div>
+
+                            <small>Kabar Terbaru</small>
+                        </div>
+                        <div class="col-3  text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icon/pencairan-dana.svg" alt="" class="me-2" style="height: 20px;">
+                                <p class="count m-0 d-flex align-items-center">1x</p>
+                            </div>
+
+                            <small>Pencairan Dana</small>
+                        </div>
+                        <div class="col-3  text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icon/doa-orang-baik.svg" alt="" class="me-2" style="height: 20px;">
+                                <p class="count m-0 d-flex align-items-center">829</p>
+                            </div>
+                            <small>Doa Orang Baik</small>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 col-12">
+                        <a href="" class="button my-3 w-100 text-center"><i class="fa-solid fa-download"></i> &nbsp;
+                            Unduh Laporan RAB</a>
+                    </div>
+
+                    <div class="line-spacing"></div>
+
+                    <div class="row penggalang-dana my-4 px-0 mx-0">
+                        <div class="justify-content-between d-flex pb-3">
+                            <h2>Penggalang Dana</h2>
+                            <a href="/penggalang-dana">Lihat Semua</a>
+                        </div>
+                        <div class="col-12 row px-0 mx-0">
+                            <div class="col-6 row mx-0 px-0">
+                                <div class="col-4 align-self-center">
+                                    <img src="assets/img/merawat-indonesia.png" width="100%" alt="">
+                                </div>
+                                <div class="col-8 align-self-center">
+                                    <a href="/" class="small">Merawat Indonesia</a>
+                                    <span class="badge rounded-pill bg-main-opacity text-color fw-normal"><img
+                                            src="assets/img/icon/verify.svg" alt=""> Terverifikasi</span>
+                                </div>
+                            </div>
+                            <div class="col-6 row mx-0 px-0">
+                                <div class="col-6 align-self-center text-center">
+
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/icon/total-donatur.svg" alt="" class="me-2"
+                                            style="height: 20px;">
+                                        <p class="count m-0">829</p>
+                                    </div>
+
+                                    <small>Donatur</small>
+                                </div>
+                                <div class="col-6 align-self-center text-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/icon/total-kampanye.svg" alt="" class="me-2"
+                                            style="height: 20px;">
+                                        <p class="count m-0">829</p>
+                                    </div>
+
+                                    <small>Kampanye</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-spacing"></div>
+
+                    <!-- Buttons -->
+                    <div class="row info-kampanye my-4 mx-0">
+                        <div class="d-flex scroll-x gap-2 mb-3">
+                            <button class="btn btn-outline-danger tab-button"
+                                data-target="keterangan">Keterangan</button>
+                            <button class="btn btn-outline-danger tab-button" data-target="kabar-terbaru">Kabar
+                                Terbaru</button>
+                            <button class="btn btn-outline-danger tab-button" data-target="donatur">Donatur</button>
+                            <button class="btn btn-outline-danger tab-button" data-target="kabar-pencairan">Kabar
+                                Pencairan</button>
+                        </div>
+
+                        <!-- Content Sections -->
+                        <div class="tab-content keterangan">
+                            <p>“Dengan keterbatasan nya mas Hasan tidak pasrah dengan keadaan justru menjadikan acuan
+                                semangat untuk nya agar bisa hidupi keluarga kecil nya.”</p>
+                        </div>
+
+                        <div class="tab-content kabar-terbaru d-none">
+                            <div class="accordion" id="penyaluranDanaAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="circle-number">1</div>
+                                                <div>
+                                                    <div class="text-muted small mb-1">30 Januari 2025</div>
+                                                    <div class="fw-bold text-danger">Penyaluran Dana</div>
+                                                </div>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-down ms-auto circle-dropdown"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#penyaluranDanaAccordion">
+                                        <div class="accordion-body">
+                                            <p>Assalamualaikum wr.wb</p>
+                                            <p>Alhamdulillah, Yayasan Bina Mulia cabang Malang telah menyalurkan bantuan
+                                                kepada pak Hasan berupa sembako dan uang santunan.</p>
+                                            <img src="assets/img/merawat-indonesia.png" alt="Penyaluran Dana"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content donatur d-none">
+                            <div class="card box-shadow mx-0 p-3 w-100">
+                                <div class="col-12 row">
+                                    <div class="col-7">
+                                        <h2>Ade Yudhistira</h2>
+                                        <small>1 hari yang lalu</small>
+                                    </div>
+                                    <div class="col-5 align-self-center text-end p-0">
+                                        <span class="text-color large">Rp 500.000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content kabar-pencairan d-none">
+                            <div class="accordion" id="kabarPencairanAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="circle-number">1</div>
+                                                <div>
+                                                    <div class="text-muted small mb-1">30 Januari 2025</div>
+                                                    <div class="fw-bold text-danger">Pencairan Dana Rp 500.000</div>
+                                                </div>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-down ms-auto circle-dropdown"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#kabarPencairanAccordion">
+                                        <div class="accordion-body">
+                                            <p>Ke rekening BNI Syariah *** **** **** **** 8052 a/n - PERWAKILAN YAYASAN
+                                                SOS DESA</p>
+                                            <a href="" class="button my-3 d-block text-center"><i
+                                                    class="fa-solid fa-download"></i> &nbsp; Laporan Penggunaan Dana</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="line-spacing"></div>
+
+
+
+            <div class="line-spacing"></div>
+
+            <div class="row col-12 m-0 px-3 doa-orang-baik mt-3">
+                <h2 class="mx-0 px-0">Doa Orang Baik</h2>
+                <div class="card box-shadow">
+                    <div class="d-flex justify-content-between">
+                        <h3>Ade Yduhistra</h3>
+                        <small>1 hari yang lalu</small>
+                    </div>
+                    <p>Semoga mas hasan bs mendapatkan modal usaha, spy tdk berjualan koran di jalan & mendapatkan
+                        bantuan dana utk membayar kontrak</p>
+                    <div class="justify-content-between d-flex">
+                        <a href="#" class="badge pt-1 px-3 rounded-pill bg-main-opacity text-color fw-normal"><i
+                                class="fa-solid fa-hands-praying "></i> &nbsp; 1 Aaminn</a>
+                        <h2 class="d-flex mb-0 align-self-center">Rp 500.000 <small class="fw-normal ms-1 mt-1">Donasi
+                                Terkirim</small></h2>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div class="d-flex justify-content-between">
+                        <h3>Ade Yduhistra</h3>
+                        <small>1 hari yang lalu</small>
+                    </div>
+                    <p>Semoga mas hasan bs mendapatkan modal usaha, spy tdk berjualan koran di jalan & mendapatkan
+                        bantuan dana utk membayar kontrak</p>
+                    <div class="justify-content-between d-flex">
+                        <a href="#" class="badge pt-1 px-3 rounded-pill bg-main-opacity text-color fw-normal"><i
+                                class="fa-solid fa-hands-praying "></i> &nbsp; 1 Aaminn</a>
+                        <h2 class="d-flex mb-0 align-self-center">Rp 500.000 <small class="fw-normal ms-1 mt-1">Donasi
+                                Terkirim</small></h2>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div class="d-flex justify-content-between">
+                        <h3>Ade Yduhistra</h3>
+                        <small>1 hari yang lalu</small>
+                    </div>
+                    <p>Semoga mas hasan bs mendapatkan modal usaha, spy tdk berjualan koran di jalan & mendapatkan
+                        bantuan dana utk membayar kontrak</p>
+                    <div class="justify-content-between d-flex">
+                        <a href="#" class="badge pt-1 px-3 rounded-pill bg-main-opacity text-color fw-normal"><i
+                                class="fa-solid fa-hands-praying "></i> &nbsp; 1 Aaminn</a>
+                        <h2 class="d-flex mb-0 align-self-center">Rp 500.000 <small class="fw-normal ms-1 mt-1">Donasi
+                                Terkirim</small></h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="container my-3">
+                    <div class="p-3  rounded">
+                        <p class="fw-bold text-dark mb-2">Update Informasi Kampanye ?</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-second flex-fill text-white">Edit Kampanye</a>
+                            <a href="kabar-terbaru.html" class="btn btn-second flex-fill text-white">Kabar Terbaru</a>
+                            <a href="#" class="btn btn-second flex-fill text-white">Pencairan Dana</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".tab-button").click(function () {
+                // Hapus kelas aktif dari semua tombol
+                $(".tab-button").removeClass("btn-primary").addClass("btn-outline-primary");
+                $(this).removeClass("btn-outline-primary").addClass("btn-primary");
+
+                // Sembunyikan semua konten
+                $(".tab-content").addClass("d-none");
+
+                // Tampilkan konten sesuai tombol yang diklik
+                const target = $(this).data("target");
+                $("." + target).removeClass("d-none");
+            });
+        });
+    </script>
+
+    <script>
+        // Toggle icon on accordion collapse
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const icon = button.querySelector('i');
+                icon.classList.toggle('fa-chevron-up');
+                icon.classList.toggle('fa-chevron-down');
+            });
+        });
+    </script>
+</body>
+
+</html>
